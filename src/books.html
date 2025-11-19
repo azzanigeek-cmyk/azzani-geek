@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../azzani-geek/src/books.css">
+    <title>Azzani | Books</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+ body {
+    background-image: url("../AzzaniGeekWeb/img/image_10.png");
+    background-color: rgb(1, 20, 33);
+    color: rgb(224, 224, 219);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 4px 4px 4px rgb(23, 25, 26);
+    margin: 0 auto;
+ }
+
+ header {
+    margin-top: -180px;
+    margin-left: 44px;
+ }
+
+ img {
+    margin-top: -50%;
+    border-radius: 5%;
+    width: 152px;
+    border: 2px 2px 2px solid black;
+ }
+
+ input {
+    border: none;
+    outline: none;
+    height: 35px;
+    margin: 10px;
+    background-color: rgb(1, 8, 14);
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+ }
+
+ .notification {
+    width: 40px;
+    height: 40px;
+    padding-left: 180px;
+    background-image: white;
+    transition: filter ease-in-out 0.2s;
+ }
+
+ .notification:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 12px white);
+ }
+
+ .notification_btn {
+    background: none;
+    border: none;
+ }
+
+ a {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(224, 224, 219);
+    margin: 6.5px;
+ }
+
+ a:hover {
+    text-shadow: 3px 3px 3px rgb(88, 88, 88);
+ }
+
+ h1 {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 2px;
+    font-size: 70px;
+ }
+
+
+ p {
+    margin-top: 200px;
+    margin: 2px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .desc {
+    padding: 0px 100px;
+ }
+
+ .sidebar-links {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    margin: -12px;
+ }
+
+ .sidebar-links-position {
+    margin-left: 90px;
+ }
+
+ .img-perfil {
+    padding: 30px;
+ }
+
+ .grid {
+    display: grid;
+    margin: 0 auto;
+ }
+
+ .nav {
+    grid-area: content;
+ }
+
+ .content {
+    grid-area: content;
+    margin-left: 50px;
+ }
+
+ .sidenav {
+    grid-area: sidenav;
+ }
+
+ .advert {
+    grid-area: advert;
+ }
+
+ .footer {
+    grid-area: footer;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    padding: center;
+ }
+
+ .grid-template-areas-4 {
+
+    grid-template-columns: 30% 140% 35%;
+    grid-template-rows: 9.4vh 100vh 10vh;
+    grid-template-areas:
+       "logo nav nav"
+       "sidenav content advert"
+       "footer footer footer"
+    ;
+ }
+
+ .desc-books {
+    margin-left: 200px;
+    margin-right: 150px;
+    margin-top: -80px;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+ }
+
+ .grid-card {
+    display: flex;
+    max-width: 1500px;
+    margin: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+ }
+
+ h2 {
+    margin-left: 200px;
+    text-align: start;
+ }
+
+ .card-books {
+    margin: 15px;
+    min-width: 1000px;
+    max-width: 1000px;
+    min-height: 300px;
+    max-height: 300px;
+    background-color: rgb(1, 8, 14);
+ }
+
+ .img-books {
+    height: 100px;
+    width: 65px;
+    margin: -35px 30px;
+    margin-top: -23px;
+ }
+
+ /* Grid Item */
+ .item {
+    margin: 80px;
+    text-align: center;
+    font-size: 1.5em;
+ }
+
+ .grid {
+    max-width: 1000px;
+ }
+
+ body {
+    font-family: monospace;
+    padding-bottom: 60px;
+ }
+
+ body>div {
+    padding: 40px 0;
+ }
+
+ body>div>img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+ }
+
+ .page {
+    margin-left: -1050px;
+ }
+
+ .btn-options {
+    display: grid;
+    flex-direction: column;
+    font-size: 500px;
+    margin-top: -235px;
+ }
+
+ .rate {
+    width: 70px;
+    height: 60px;
+    color: white;
+ }
+
+ .rate-1,
+ .rate-2,
+ .rate-3,
+ .rate-4,
+ .rate-5 {
+    background: none;
+    outline: none;
+    border: none;
+    margin-top: 40px;
+    font-size: 30px;
+ }
+
+ .option-buttons {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 125px;
+    height: 45px;
+    margin: 10px;
+    outline: none;
+    font-size: 20px;
+    margin-left: 860px;
+ }
+
+ .option-buttons:hover {
+    cursor: pointer;
+    background-color: rgb(187, 181, 181);
+ }
+
+ .rate-1:hover {
+    transition: filter ease-in-out 0.2s;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 12px white);
+ }
+
+ .rate-2:hover {
+    transition: filter ease-in-out 0.2s;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 12px white);
+ }
+
+ .rate-3:hover {
+    transition: filter ease-in-out 0.2s;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 12px white);
+ }
+
+ .rate-4:hover {
+    transition: filter ease-in-out 0.2s;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 12px white);
+ }
+
+ .rate-5:hover {
+    transition: filter ease-in-out 0.2s;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 12px white);
+ }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1533349927949861"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="grid">
+            <section class="grid grid-template-areas-4">
+                <div class="item nav">
+                    <header class="header-content">
+                        <nav>
+                            <div class="header-grid">
+                                <div class="hiperlinks">
+                                    <a href="../azzani-geek/src/profile.html" target="_blank">Profile</a>
+                                    <a href="../azzani-geek/src/index.html">Home</a>
+                                    <a href="../azzani-geek/src/shop.html">Shop</a>
+                                    <a href="../azzani-geek/src/books.html">Books</a>
+                                    <a href="../azzani-geek/src/games.html">Games</a>
+                                    <a href="../azzani-geek/src/about.html" target="_blank">About</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </header>
+                </div>
+                <div class="item content">
+                    <div class="content">
+                            <div class="grid-card">
+        <div class="card-books">
+            <h2>Harry Potter e o Prisioneiro de Azkaban</h2> 
+            <div class="img-books"><img src="../azzani-geek/img/harrypotter_prisioneiroazkaban.jpg" alt="foto_book"></div> <br>
+            <p class="desc-books" >As aulas estão de volta à Hogwarts e Harry Potter não vê a hora de embarcar no expresso 
+                a vapor que o levará de volta à escola de bruxaria. Mais uma vez suas férias na rua dos Alfeneiros foi triste 
+                e solitária. Com muita ação, humor e magia, 'Harry Potter e o prisioneiro de Azkaban' traz de volta o gigante 
+                atrapalhado Rúbeo Hagrid, o sábio diretor Alvo Dumbledore, a exigente professora de transformação Minerva 
+                MacGonagall e o novo mestre Lupin, que guarda grandes surpresas para Harry.
+            </p>
+            <button onclick="r1()" class="rate-1" >
+                <img id="rate_value" id="one-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r2()" class="rate-2" >
+                <img id="rate_value" id="two-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>  
+            <button onclick="r3()" class="rate-3" >
+                <img id="rate_value" id="three-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r4()" class="rate-4" >
+                <img id="rate_value" id="four-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r5()" class="rate-5" >
+                <img id="rate_value" id="five-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <div class="btn-options">
+            <button class="option-buttons">Comics</button>
+            <button class="option-buttons">Book</button>
+            <button class="option-buttons">AudioBook</button>
+            </div>
+        </div> 
+
+        <div class="card-books">
+            <h2>Harry Potter e o Prisioneiro de Azkaban</h2> 
+            <div class="img-books"><img src="../img/harrypotter_prisioneiroazkaban.jpg" alt="foto_book"></div> <br>
+            <p class="desc-books" >As aulas estão de volta à Hogwarts e Harry Potter não vê a hora de embarcar no expresso 
+                a vapor que o levará de volta à escola de bruxaria. Mais uma vez suas férias na rua dos Alfeneiros foi triste 
+                e solitária. Com muita ação, humor e magia, 'Harry Potter e o prisioneiro de Azkaban' traz de volta o gigante 
+                atrapalhado Rúbeo Hagrid, o sábio diretor Alvo Dumbledore, a exigente professora de transformação Minerva 
+                MacGonagall e o novo mestre Lupin, que guarda grandes surpresas para Harry.
+            </p>
+            <button onclick="r1()" class="rate-1" >
+                <img id="rate_value" id="one-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r2()" class="rate-2" >
+                <img id="rate_value" id="two-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>  
+            <button onclick="r3()" class="rate-3" >
+                <img id="rate_value" id="three-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r4()" class="rate-4" >
+                <img id="rate_value" id="four-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r5()" class="rate-5" >
+                <img id="rate_value" id="five-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <div class="btn-options">
+            <button class="option-buttons">Comic´s</button>
+            <button class="option-buttons">Book</button>
+            <button class="option-buttons">AudioBook</button>
+            </div>
+        </div> 
+
+        <div class="card-books">
+            <h2>Harry Potter e o Prisioneiro de Azkaban</h2> 
+            <div class="img-books"><img src="../azzani-geek/img/harrypotter_prisioneiroazkaban.jpg" alt="foto_book"></div> <br>
+            <p class="desc-books" >As aulas estão de volta à Hogwarts e Harry Potter não vê a hora de embarcar no expresso 
+                a vapor que o levará de volta à escola de bruxaria. Mais uma vez suas férias na rua dos Alfeneiros foi triste 
+                e solitária. Com muita ação, humor e magia, 'Harry Potter e o prisioneiro de Azkaban' traz de volta o gigante 
+                atrapalhado Rúbeo Hagrid, o sábio diretor Alvo Dumbledore, a exigente professora de transformação Minerva 
+                MacGonagall e o novo mestre Lupin, que guarda grandes surpresas para Harry.
+            </p>
+            <button onclick="r1()" class="rate-1" >
+                <img id="rate_value" id="one-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r2()" class="rate-2" >
+                <img id="rate_value" id="two-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>  
+            <button onclick="r3()" class="rate-3" >
+                <img id="rate_value" id="three-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r4()" class="rate-4" >
+                <img id="rate_value" id="four-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <button onclick="r5()" class="rate-5" >
+                <img id="rate_value" id="five-star" class="rate" src="../azzani-geek/img/Black_bordered_white_star.svg">
+            </button>
+            <div class="btn-options">
+            <button class="option-buttons">Comic´s</button>
+            <button class="option-buttons">Book</button>
+            <button class="option-buttons">AudioBook</button>
+            </div>
+        </div> 
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1533349927949861"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-1533349927949861"
+     data-ad-slot="9862853000"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>        
+        
+               </div>     
+                    </div>
+                </div>
+                <div class="item sidenav">
+                    <div class="sidebar">
+                        <button class="notification_btn"><span class="notification"
+                                style='font-size:40px;'>&#128276;</span></button>
+                        <div class="img-perfil"><img src="../azzani-geek/img/perfil.jpg" alt="icone_pbook"></div><br>
+                        <input placeholder="Username" readonly> <br>
+                        <input placeholder="LvL 0 / 00,00 $" readonly> <br><br>
+                        <div class="sidebar-links-position">
+                            <a class="sidebar-links" href="../azzani-geek/src/inventory.html"
+                                target="_blank">Inventory</a><br><br>
+                            <a class="sidebar-links" href="../azzani-geek/src/friends.html"
+                                target="_blank">Friends</a><br><br>
+                            <a class="sidebar-links" href="../azzani-geek/src/config.html">Config</a><br><br>
+                            <a class="sidebar-links" href="../azzani-geek/src/logout.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1533349927949861"
+     crossorigin="anonymous"></script>
+<!-- vertical advert -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1533349927949861"
+     data-ad-slot="6606016383"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>                    
+                </div>
+                <div id="copyright" class="item footer">© Azzani Geek</div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

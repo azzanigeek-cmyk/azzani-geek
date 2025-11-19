@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../azzani-geek/src/config.css">
+    <title>Azzani | Account Settings</title>
+    <style>
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+ body {
+    background-image: url("../AzzaniGeekWeb/img/image_10.png");
+    background-color: rgb(1, 20, 33);
+    color: rgb(224, 224, 219);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 4px 4px 4px rgb(23, 25, 26);
+    margin: 9.5mm;
+ }
+
+ h1 {
+    font-size: 40px;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 5px;
+    font-style: italic;
+ }
+
+ input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 12px;
+    outline: none;
+ }
+
+ button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 45px;
+    margin: 13px;
+    width: 237px;
+    outline: none;
+ } button:hover {
+    cursor: pointer;
+    background-color: rgb(187, 181, 181);
+ }
+
+.img-perfil {
+    width: 200px;
+    height: 200px;
+    margin-left: -300px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px black;
+}
+
+.info-edit {
+    outline: none;
+    box-shadow: 8px 8px 8px black;
+} .info-edit-ui {
+    text-align: left;
+    margin-left: 281px;
+    margin-top: -245px;
+}
+
+ .bio-edit-input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    resize: none;
+    width: 500px;
+    height: 150px;
+    outline: none;
+    margin-top: 10px;
+    box-shadow: 8px 8px 8px black;
+}
+
+#birthdate {
+    width: 182px;
+}
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1533349927949861"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="profile-page">
+        <h1>Your Account</h1>
+        <div>
+            <img class="img-perfil" src="../azzani-geek/img/perfil.jpg" alt="icone_pbook">
+        </div><br>
+
+        <div class="info-edit-ui">
+            <input class="info-edit" placeholder="nickname"> <br>
+            <input type="date" id="birthdate" class="info-edit" placeholder="00/00/0000"> <br>
+            <input class="info-edit" type="password" placeholder="password"> <br>
+            <input class="info-edit" type="password" placeholder="repeat your password"> <br>
+        </div>
+
+        <div class="bio-edit">
+            <textarea class="bio-edit-input" placeholder="bio"></textarea> <br>
+        </div>
+
+        <div class="action">
+            <button>Cancel</button>
+            <button>Save</button>
+        </div><br><br><br><br><br><br>
+
+        <div class="footer">© Azzani Geek</div>
+    </div>
+</body>
+
+</html>
